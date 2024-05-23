@@ -1,0 +1,58 @@
+.home-container {
+  position: relative;
+  min-height: 100vh; /* Ensure the container is at least the height of the viewport */
+  background-size: contain;
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+}
+
+.welcome-message {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.welcome-message h2 {
+  font-size: 1.5rem; /* Large font size for the heading */
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.welcome-message p {
+  font-size: 1rem; /* Larger font size for the paragraph */
+}
+
+.get-started-button {
+  margin-top: 40px; /* Increase margin from the welcome message */
+  position: relative;
+  z-index: 1;
+}
+
+.get-started-button button {
+  padding: 15px 30px; /* Larger padding for the button */
+  font-size: 1  rem; /* Larger font size for the button */
+  background-color: #4CAF50; /* Green color for the button */
+  color: white;
+  border: none;
+  border-radius: 50px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.get-started-button button:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}
